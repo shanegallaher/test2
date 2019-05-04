@@ -46,7 +46,7 @@
 			texture.repeat.set (12,12);
 			
 			// create ground material
-			material = new MeshPhysicalMaterial({map:texture,bumpMap:texture});
+			material = new THREE.MeshPhysicalMaterial({map:texture,bumpMap:texture});
 			
 			//create ground mesh
 			var geometry = new THREE.PlaneBufferGeometry( 100,100 );
