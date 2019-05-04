@@ -59,7 +59,7 @@
 			var texture = new THREE.TextureLoader().load("rock.jpg");
 			var envMap = new THREE.CubeTextureLoader().setPath( 'assets/').load( [ '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg' ] );
 			// create Tetrahedron
-			var geometry = new THREE.TetrahedronBufferGeometry(,0);
+			var geometry = new THREE.TetrahedronBufferGeometry(2,0);
 			var material = new THREE.MeshPhysicalMaterial( { map:texture, envMap:envMap, metalness:1.0,roughness:0.0 });
 			t = new THREE.Mesh( geometry, material );
 			t.rotation.x=Math.PI/180*-10;
